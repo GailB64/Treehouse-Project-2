@@ -1,0 +1,26 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+/* Base Element Styles */
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+    body {
+     font-family: 'Raleway', sans-serif; 
+    }
+  
+    .main-header, .main-nav {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+    
+    ul {
+      list-style: none;
+    }
