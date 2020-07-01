@@ -1,84 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gail Bartik</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@100;200;300;400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <title>Gail Bartik</title>
   </head>
 
-  <body>  
-      <header id="top">
-        <h1 class="main-header">Gail Bartik</h1>
+  <body>
+      <nav class="clearfix">
+        <h1 ><a href="#">Gail Bartik</a></h1>
         <ul class="main-nav">
           <li><a href="#">home</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
-        <img class="head-shot" src="../images/responsive-layout-profile.png" alt="Gail, head shot">
+        <img class="head-shot clearfix" src="../images/responsive-layout-profile.png" alt="Gail, head shot">
         <p>Hi!  I am a soon to be graduate of the Treehouse Front End Web Development program.  I am excited to combine my life experience of art, design, marketing and client 
           interaction with web design and utilization.  What a great way to combine my many interests!
         </p>
-      </header>  
-   
-      <h2> Portfolio</h2>
-   <main>
-      <div>
-        <img class="portfolio" src="../images/portfolio-1.png" alt="thumbnails of portfolios">
-        <h3>Marketing Page</h3>
-        <p>This home page exemplifies the specific message and look that the A1 Market Consulting firm wanted to convey to their prospective clients.
-        </p>
-      </div>
+      </nav>
+      <h2 id="portfolio"> Portfolio</h2>
 
-      <div>
-        <img class="portfolio" src="../images/portfolio-2.png" alt="front page of marketing website">
-        <h3>Search Page</h3>
-        <p>This project searches through a specific data base to find the information that the user desires.
-        </p>   
-      </div>
+<main>
+  <div class="container clearfix">
+        <div class ="col box-1">
+          <img class="portfolio" src="../images/portfolio-1.png" alt="thumbnails of portfolios">
+          <h3>Marketing Page</h3>
+          <p>This home page exemplifies the specific message and look that the A1 Market Consulting firm wanted to convey to their prospective clients.
+          </p>
+        </div>
 
-      <div>
-        <img class="portfolio" src="../images/portfolio-3.png" alt="front page of data search project">
-        <h3>Travel App</h3>
-        <p>This project compares travel times based on various modes of transportation. Allowing the user to make the best possible choice for their needs.
-        </p>   
-      </div>
+        <div class ="col box-2">
+          <img class="portfolio" src="../images/portfolio-2.png" alt="front page of marketing website">
+          <h3>Search Page</h3>
+          <p>This project searches through a specific data base to find the information that the user desires.
+          </p>   
+        </div>
 
-      <div>
-        <img class="portfolio" src="../images/portfolio-4.png" alt="front page of travel app project">
-        <h3>Map of Favorite Spots</h3>
-        <p>This project highlights my favorite spots in the city with mapping apis to plot a do-it-yourself walking tour.
-        </p>   
-      </div>
+        <div class ="col box-3">
+          <img class="portfolio" src="../images/portfolio-3.png" alt="front page of data search project">
+          <h3>Travel App</h3>
+          <p>This project compares travel times based on various modes of transportation. Allowing the user to make the best possible choice for their needs.
+          </p>   
+        </div>
 
-      <div>
-        <img class="portfolio" src="../images/portfolio-5.png" alt="map guide for walking tour">
-        <h3>Photo Gallery</h3>
-        <p>This project displays photographs from a recent trip and allows the viewer to easily navigate through the shots.
-        </p>   
-      </div>
+        <div class ="col box-4">
+          <img class="portfolio" src="../images/portfolio-4.png" alt="front page of travel app project">
+          <h3>Map of Favorite Spots</h3>
+          <p>This project highlights my favorite spots in the city with mapping apis to plot a do-it-yourself walking tour.
+          </p>   
+        </div>
 
-      <div>
-        <img class="portfolio" src="../images/portfolio-6.png" alt="front page of calculator project">
-        <h3>Calculator</h3>
-        <p>Enter your numbers and press the big blue button for results!</p>
-      </div>
-    </main>
+        <div class ="col box-5">
+          <img class="portfolio" src="../images/portfolio-5.png" alt="map guide for walking tour">
+          <h3>Photo Gallery</h3>
+          <p>This project displays photographs from a recent trip and allows the viewer to easily navigate through the shots.
+          </p>   
+        </div>
 
-  <footer>
-    <div style="clear: both;">
-      <h2> contact</h2>
+        <div class ="col box-6">
+          <img class="portfolio" src="../images/portfolio-6.png" alt="front page of calculator project">
+          <h3>Calculator</h3>
+          <p>Enter your numbers and press the big blue button for results!
+          </p>
+        </div>
+      </div>
+  </main>
+
+
+    <footer>
+      
+      <h2 id="contact">contact</h2>
       <p> I hope you are excited by this presentation!  If you would like more informaiton 
         about my current work or how these ideas can be applied to your projects, please contact me. </p>
       <p>Phone<span>987-654-1234</span><br>
-         Email<span>gailbartik@gmail.com</span></p>
+        Email<span>gailbartik@gmail.com</span></p>
 
-         <hr>
+        <hr>
 
-         <h3><span class="alignleft">Gail Bartik</span><span class="alignright"><a href="#top">Back to Top</a></span></h3>
-    </div>
-  </footer>
-  
+      <h2 class="footer-name">Gail Bartik</h2>
+
+      <ul class="footer-nav">
+        <li class="top"><a href="#top">back to top</a></li>
+        <li class="full"><a href="#top">home</a></li>
+        <li class="full"><a href="#portfolio">portfolio</a></li>
+        <li class="full"><a href="#contact">contact</a></li>
+      </ul>
+    </footer>
  </body> 
 </html>
