@@ -1,4 +1,5 @@
-/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Zilla Slab', serif;*/
 
 /* Base Element Styles */
 
@@ -9,7 +10,7 @@
     body {
      font-family: 'Raleway', sans-serif;
      font-weight: 200;
-     line-height: 1.7;
+     line-height: 1.4;
      letter-spacing: .05em;
      text-align: center;
      color: #333;
@@ -17,22 +18,34 @@
     }
 
     p {
+      font-family:'Zilla Slab', serif;
+      font-weight: 300;
+      font-size: 1.5em; 
       margin: auto;
       max-width: 80%;
       padding-bottom: 30px;
     }
 
+    header {
+      background: #e9eff1 url('../images/AshcroftFall.jpg') no-repeat center;
+      background-size: cover;
+      margin-bottom: 2em;
+    }
+    
+    header p {
+      color: #fff;
+      font-weight: 200;
+    }
+
     header,
     footer {
-      background: 100%;
-      background-color:#f8f8f8;
+      background-color:#E9EFF1;
       margin-top: 0;
       padding-bottom: 20px;
     }
 
     a {
       font-size: 1em;
-      font-weight: bold;
       text-decoration: none;
       color: #333;
       text-transform: uppercase;
@@ -45,6 +58,7 @@
 
     h1 {
       font-size: 2.5em;
+      color: #fff;
       padding-top: 30px;
       padding-bottom: 20px;
       margin: 0px;
@@ -52,13 +66,14 @@
 
     h2 {
       text-transform: uppercase;
+      color: #3d5b5b;
       padding: 60px 0px;
       margin: 0px; 
     }
 
     h3 {
       font-size: 1.5em;
-      font-weight: 400;
+      font-weight: 500;
       margin: 20px 0;
     }
 
@@ -75,6 +90,7 @@
     }
 
     span {
+      font-style: italic;
       font-weight: 500;
       margin-left: 30px;
     }
@@ -83,6 +99,7 @@
 
     h1 a {
       text-transform: none;
+      color: #fff;
     }
   
     h1 .main-nav {
@@ -95,22 +112,24 @@
     }
     
     .main-nav li {
-      font-size: 1em;
-      font-weight: 500;
+      font-size: 1.25em;
+      font-weight: 600;
       padding: 10px 0;
       margin: 0px 20px 10px 20px;
       background-color: #fff;
     }
 
     h1 a, .main-nav li {
-      color: #333;
+      color: #fff;
     }
   
     .head-shot  {
+      border-radius: 3px;
+      max-height: 250px;
       display: block;
       margin: auto;
-      max-width: 70%;
-      padding: 30px 0 40px;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }    
 
     .portfolio {
@@ -118,6 +137,15 @@
       margin: auto;
       max-width: 60%;
       padding-bottom: 20px;
+    }
+    .skill-list {
+      margin-top: -15px;
+      padding-bottom: 60px;
+      font-size: 1.1em;
+      font-weight: 400;
+      display: block;
+      max-width: 80%;
+      margin-left: 10%;
     }
 
     .footer-name {
@@ -149,9 +177,8 @@
       display: none;
     }
 
-    /* Pseudo-classes ------------------ */
-
-   
+    /* Pseudo-classes,  I did not like the change of color after using links, so I deleted this catagory.  */
+    /* Nav text changes color in min-width 1024px*/
 
     /* Floated Columns ------------------*/
 
@@ -185,6 +212,7 @@
     }
 
     .head-shot {
+      max-width: 350px;
       float: right;
       margin-right: 2em;
       width: calc(50% - 40px);
@@ -269,7 +297,7 @@
   @media (min-width: 1024px) {
 
     body {
-      background-color: #f8f8f8;
+      background-color: #e9eff1;
       max-width: 1150px;
       margin: 0 auto;
     }
@@ -282,6 +310,10 @@
 
     a {
       padding: 15px;
+    }
+
+    .main-nav li a {
+      color: #e9eff1;
     }
 
     .main-nav a:last-child {
@@ -311,7 +343,7 @@
     }
 
     .head-shot {
-      max-width: none;
+      margin-right: 60px;
     }
 
     .wrapper {
